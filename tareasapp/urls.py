@@ -15,6 +15,7 @@ urlpatterns = [
 
     # API RESET para listar tarea
 
-    path('api/tareas/', views.TareasApiView.as_view(), name='api_tareas')
+    path('api/tareas/', views.TareasApiView.as_view(), name='api_tareas'),
+    path('api/tareas/<int:id>/', views.TareaDetalleApiView.as_view(), name='api_tarea_detalle')
 ]
 
